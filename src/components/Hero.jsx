@@ -115,71 +115,81 @@ const Hero = () => {
 
             {/* Main Content */}
             <div className={`hero-content ${loaded ? 'loaded' : ''}`}>
-                {/* Pre-title Badge - PROMO */}
-                <div className="hero-badge glitch-badge">
-                    <span className="badge-dot pulse-red"></span>
-                    <span className="badge-text" style={{ color: '#ff0044', fontWeight: 'bold' }}>XMAS SPECIAL // 3H SET</span>
+                {/* Pre-title Badge */}
+                <div className="hero-badge">
+                    <span className="badge-dot"></span>
+                    <span className="badge-text">BERLIN UNDERGROUND TECHNO</span>
                 </div>
 
                 {/* Main Title */}
                 <h1 className="hero-title">
-                    <span className="title-shadow" aria-hidden="true">SOLLTE</span>
+                    <span className="title-shadow" aria-hidden="true">AIRDOX</span>
 
                     <div className="title-snake-container">
-                        {'SOLLTE'.split('').map((letter, i) => (
+                        {'AIRDOX'.split('').map((letter, i) => (
                             <div key={i} className="snake-letter-wrapper">
-                                {/* SVG Logic kept simple for promo or reused - simplified for cleaner code update */}
-                                <span className="promo-title-text" style={{
-                                    display: 'inline-block',
-                                    background: 'linear-gradient(to bottom, #ff0044, #ff00aa)',
-                                    WebkitBackgroundClip: 'text',
-                                    WebkitTextFillColor: 'transparent',
-                                    filter: 'drop-shadow(0 0 10px rgba(255, 0, 68, 0.5))'
-                                }}>{letter}</span>
+                                <svg className="letter-svg" viewBox="0 0 160 220">
+                                    <defs>
+                                        <linearGradient id={`grad-${i}`} x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" stopColor="#ffffff" />
+                                            <stop offset="50%" stopColor="var(--neon-cyan)" />
+                                            <stop offset="100%" stopColor="var(--neon-pink)" />
+                                        </linearGradient>
+                                    </defs>
+                                    <text
+                                        x="50%"
+                                        y="80%"
+                                        textAnchor="middle"
+                                        className={`letter-stroke letter-stroke-${i}`}
+                                    >
+                                        {letter}
+                                    </text>
+                                    <text
+                                        x="50%"
+                                        y="80%"
+                                        textAnchor="middle"
+                                        fill={`url(#grad-${i})`}
+                                        className={`letter-fill letter-fill-${i}`}
+                                    >
+                                        {letter}
+                                    </text>
+                                </svg>
                             </div>
                         ))}
                     </div>
-                </h1>
-                <h1 className="hero-title sub-hero-title" style={{ fontSize: '4rem', marginTop: '-20px' }}>
-                    <span className="glitch glitch-1">NICHT SEIN</span>
-                    <span className="title-glow" style={{ color: '#fff' }}>NICHT SEIN</span>
+
+                    <span className="title-glow" aria-hidden="true">AIRDOX</span>
+                    <span className="glitch glitch-1" aria-hidden="true">AIRDOX</span>
+                    <span className="glitch glitch-2" aria-hidden="true">AIRDOX</span>
                 </h1>
 
                 {/* Tagline */}
                 <div className="hero-tagline">
                     <div className="tagline-line"></div>
                     <p className="tagline-text">
-                        <span>EXCLUSIVE</span>
-                        <span className="separator" style={{ color: '#ff0044' }}>◆</span>
-                        <span>3 HOURS JOURNEY</span>
+                        <span>UNDERGROUND</span>
+                        <span className="separator">◆</span>
+                        <span>SOUND</span>
+                        <span className="separator">◆</span>
+                        <span>EXPERIENCE</span>
                     </p>
                     <div className="tagline-line"></div>
                 </div>
 
-                {/* CTA Buttons - Single Focus */}
+                {/* CTA Buttons */}
                 <div className="hero-cta">
                     <button
                         className="btn btn-primary hero-btn interactive"
-                        style={{
-                            background: 'linear-gradient(45deg, #ff0044, #ff00aa)',
-                            boxShadow: '0 0 20px rgba(255, 0, 68, 0.4)',
-                            border: 'none',
-                            minWidth: '220px'
-                        }}
-                        onClick={() => {
-                            // Find the Set ID for 'SOLLTE NICHT SEIN' (ID: 6) and trigger play if possible or scroll
-                            const audio = document.querySelector('audio');
-                            // We can't access context here easily without hook, but we can scroll to music
-                            document.getElementById('music')?.scrollIntoView({ behavior: 'smooth' });
-                            // Ideally, we would auto-play set ID 6. 
-                            // For now, scroll to Music section where it's highlighted.
-                        }}
+                        onClick={() => document.getElementById('music')?.scrollIntoView({ behavior: 'smooth' })}
                     >
-                        <div className="btn-content">
-                            <span className="play-icon">▶</span>
-                            <span>STREAM NOW</span>
-                        </div>
+                        <span>GET THE SOUND</span>
                         <div className="btn-shine"></div>
+                    </button>
+                    <button
+                        className="btn btn-outline hero-btn interactive"
+                        onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+                    >
+                        <span>BOOK NOW</span>
                     </button>
                 </div>
 
