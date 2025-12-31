@@ -1,19 +1,4 @@
 export const sets = [
-    {
-        id: 'secret_set_2025_12_22',
-        title: '🎄 XMAS SPECIAL 🎁',
-        date: '24.12.2025',
-        file: '/sets/public/Airdox_Secret_Set_Pirate_Studio_22_12_2025_part000.mp3',
-        parts: [
-            '/sets/public/Airdox_Secret_Set_Pirate_Studio_22_12_2025_part000.mp3',
-            '/sets/public/Airdox_Secret_Set_Pirate_Studio_22_12_2025_part001.mp3',
-            '/sets/public/Airdox_Secret_Set_Pirate_Studio_22_12_2025_part002.mp3'
-        ],
-        duration: '2:46:56',
-        isNew: true,
-        isChristmasGift: true,
-        vinylColor: '#ff0000'
-    },
     { id: '0', title: 'PIRATE STUDIO (17.12.)', date: '17.12.2025', file: '/sets/public/Airdox Pirate Studio_17.12.2025.mp3', isNew: true, duration: '1:05:00', vinylColor: '#00f5ff' },
     { id: '1', title: 'PIRATE STUDIO (OLD)', date: 'DEC 2025', file: '/sets/public/Airdox Pirate-Studio 3_12_2025.mp3', duration: '1:02:34', vinylColor: '#ff00aa' },
     {
@@ -52,22 +37,6 @@ export const sets = [
         duration: '52:45',
         vinylColor: '#9370db'
     },
-    {
-        id: '6',
-        title: 'SECRET SET (PIRATE STUDIO)',
-        date: 'FEB 2025',
-        file: '/sets/public/Airdox vs Jette_sollte nicht sein_2024_02_part000.mp3',
-        parts: [
-            '/sets/public/Airdox vs Jette_sollte nicht sein_2024_02_part000.mp3',
-            '/sets/public/Airdox vs Jette_sollte nicht sein_2024_02_part001.mp3',
-            '/sets/public/Airdox vs Jette_sollte nicht sein_2024_02_part002.mp3',
-            '/sets/public/Airdox vs Jette_sollte nicht sein_2024_02_part003.mp3',
-            '/sets/public/Airdox vs Jette_sollte nicht sein_2024_02_part004.mp3',
-            '/sets/public/Airdox vs Jette_sollte nicht sein_2024_02_part005.mp3',
-            '/sets/public/Airdox vs Jette_sollte nicht sein_2024_02_part006.mp3'
-        ],
-        duration: '2:49:00',
-        vinylColor: '#ff0044'
-    },
+
     { id: '7', title: 'TEST SET', date: '', file: '/sets/public/airdox test.mp3', duration: '38:12', vinylColor: '#00ced1' },
 ];
