@@ -1,0 +1,17 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/MusicSection-DPb_Cj13.js","assets/vendor-DxgiCmhu.js","assets/MusicSection-BtaDeu3R.css","assets/BioSection-BB_4n5VM.js","assets/BioSection-oULT5YKv.css","assets/BookingSection-8ihGxRT7.js","assets/BookingSection-DHmGRDQZ.css","assets/Footer-BjVaef_k.js","assets/Footer-D_4x78y2.css","assets/GlobalPlayer-DQLmK21G.js","assets/GlobalPlayer-DfxW6Wx-.css"])))=>i.map(i=>d[i]);
+import{r as p,a as Xd}from"./vendor-DxgiCmhu.js";(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const u of document.querySelectorAll('link[rel="modulepreload"]'))e(u);new MutationObserver(u=>{for(const n of u)if(n.type==="childList")for(const i of n.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&e(i)}).observe(document,{childList:!0,subtree:!0});function a(u){const n={};return u.integrity&&(n.integrity=u.integrity),u.referrerPolicy&&(n.referrerPolicy=u.referrerPolicy),u.crossOrigin==="use-credentials"?n.credentials="include":u.crossOrigin==="anonymous"?n.credentials="omit":n.credentials="same-origin",n}function e(u){if(u.ep)return;u.ep=!0;const n=a(u);fetch(u.href,n)}})();var Ls={exports:{}},bn={};/**
+ * @license React
+ * react-jsx-runtime.production.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var Qd=Symbol.for("react.transitional.element"),Vd=Symbol.for("react.fragment");function Ks(l,t,a){var e=null;if(a!==void 0&&(e=""+a),t.key!==void 0&&(e=""+t.key),"key"in t){a={};for(var u in t)u!=="key"&&(a[u]=t[u])}else a=t;return t=a.ref,{$$typeof:Qd,type:l,key:e,ref:t!==void 0?t:null,props:a}}bn.Fragment=Vd;bn.jsx=Ks;bn.jsxs=Ks;Ls.exports=bn;var r=Ls.exports,Js={exports:{}},zn={},ws={exports:{}},Ws={};/**
+ * @license React
+ * scheduler.production.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.

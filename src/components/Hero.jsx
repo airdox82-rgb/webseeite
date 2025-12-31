@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-// Cache bust: 2024-12-31 v2
+// Cache bust: 2024-12-31 v3
 import './Hero.css';
 
 const Hero = () => {
@@ -69,7 +69,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <section className="hero" id="home" ref={heroRef} data-version="0.1.0">
+        <section className="hero" id="home" ref={heroRef} data-version="0.1.1">
             {/* Custom Cursor */}
             <div ref={cursorRef} className="cursor-dot"></div>
             <div ref={cursorOuterRef} className="cursor-ring"></div>

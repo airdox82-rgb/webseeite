@@ -54,7 +54,7 @@ export const sets = [
     },
     {
         id: '6',
-        title: 'SOLLTE NICHT SEIN',
+        title: 'SECRET SET (PIRATE STUDIO)',
         date: 'FEB 2025',
         file: '/sets/public/Airdox vs Jette_sollte nicht sein_2024_02_part000.mp3',
         parts: [
