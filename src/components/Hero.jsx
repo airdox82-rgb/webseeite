@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
+// Cache bust: 2024-12-31 v2
 import './Hero.css';
 
 const Hero = () => {
