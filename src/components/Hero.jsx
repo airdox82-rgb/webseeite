@@ -69,7 +69,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <section className="hero" id="home" ref={heroRef}>
+        <section className="hero" id="home" ref={heroRef} data-version="0.1.0">
             {/* Custom Cursor */}
             <div ref={cursorRef} className="cursor-dot"></div>
             <div ref={cursorOuterRef} className="cursor-ring"></div>

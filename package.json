@@ -1,12 +1,13 @@
+```json
 {
   "name": "airdox",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "dev:netlify": "netlify dev",
-    "build": "vite build",
+    "build": "vite build --force",
     "lint": "eslint .",
     "preview": "vite preview"
   },

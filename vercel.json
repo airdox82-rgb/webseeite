@@ -1,4 +1,6 @@
 {
+    "version": 2,
+    "buildTrigger": "2024-12-31-04-10",
     "rewrites": [
         {
             "source": "/api/:path*",
