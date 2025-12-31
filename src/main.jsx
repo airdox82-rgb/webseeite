@@ -1,4 +1,5 @@
 import { StrictMode } from 'react'
+// Build trigger: 2024-12-31-04-12
 import { createRoot } from 'react-dom/client'
 import './styles/global.css'
 import App from './App.jsx'
