@@ -83,7 +83,7 @@ const Footer = () => {
                             © {currentYear} AIRDOX. All rights reserved.
                         </p>
                         <p className="footer-credit">
-                            Made with <span className="heart">♥</span> in Berlin
+                            Made with <span className="heart">♥</span> in Berlin <span className="version-tag">v0.1.2</span>
                         </p>
                     </div>
                 </div>
